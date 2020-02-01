@@ -11,6 +11,35 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
 }
+
+.howWeWork__picture {
+  height: 200px;
+}
+
+.about__picture {
+  height: 550px;
+}
+
+.nav {
+  display: flex;
+  background-color: white;
+  position: fixed;
+  width: 99vw;
+  flex-direction: row-reverse;
+  height: 12vh;
+  align-self: center;
+}
+
+.nav__button {
+  height: 30px;
+  align-self: center;
+}
+
+.nav__logo {
+  position: absolute;
+  margin-top: -55px;
+padding-right: 800px;
+  height: 200px;
+}
+
