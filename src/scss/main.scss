@@ -1,20 +1,22 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
-}
-
-body {
 }
 
 .howWeWork__picture {
   height: 200px;
+}
+
+.header__picture {
+  margin-top: 12vh;
 }
 
 .about__picture {
@@ -22,9 +24,9 @@ body {
 }
 
 .nav {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 12vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 12vh;
   background-color: white;
   position: fixed;
   width: 99vw;
@@ -34,12 +36,34 @@ body {
 .nav__list {
   display: flex;
   flex-direction: row;
-align-self:center;
-justify-content: center;
+  align-self: center;
+  justify-content: center;
 }
+
+.nav__button {
+  display: flex;
+  list-style-type: none;
+  margin: 1vh;
+}
+
 
 .nav__logo {
   justify-content: flex-start;
   margin-top: -50px;
 }
 
+.nav__link {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 105px;
+  height: 40px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid rgba(139, 232, 0, 0.486);
+ 
+}
+
+.nav__link :hover {
+  border: 1px solid rgba(139, 232, 0);
+} 
