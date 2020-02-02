@@ -41,7 +41,6 @@ html {
 }
 
 .nav__button {
-  display: flex;
   list-style-type: none;
   margin: 1vh;
 }
@@ -54,16 +53,16 @@ html {
 
 .nav__link {
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-content: center;
   width: 105px;
   height: 40px;
   text-decoration: none;
   color: black;
-  border: 1px solid rgba(139, 232, 0, 0.486);
- 
+  border: 1px solid rgba(139, 232, 0, 0.397);
+  transition: all 0.3s;
 }
 
-.nav__link :hover {
-  border: 1px solid rgba(139, 232, 0);
+.nav__link:hover {
+  border: 1px solid rgb(139, 232, 0);
 } 
