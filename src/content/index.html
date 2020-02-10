@@ -22,17 +22,17 @@
 
 <body>
   <main class="main">
-    <header class="header">
       <nav class="nav">
         <img class="nav__logo" src="assets/img/sh_logo.svg" alt="company logo">
         <ul class="nav__list">
           <li class="nav__button"><a class="nav__link" href="#"> HOME </a></li>
           <li class="nav__button"><a class="nav__link" href="#about">O NAS</a></li>
-          <li class="nav__button"><a class="nav__link" href="#">ZESPÓŁ</a></li>
-          <li class="nav__button"><a class="nav__link" href="#"> PORTFOLIO </a></li>
-          <li class="nav__button"><a class="nav__link" href="#"> KONTAKT </a></li>
+          <li class="nav__button"><a class="nav__link" href="#team">ZESPÓŁ</a></li>
+          <li class="nav__button"><a class="nav__link" href="#portfolio"> PORTFOLIO </a></li>
+          <li class="nav__button"><a class="nav__link" href="#contact"> KONTAKT </a></li>
         </ul>
       </nav>
+      <header class="header">
       <img class="header__picture" src="../assets/img/headerImage.png" alt="widok na morze">
       <h1 class="header__title">Mieszkania inwestycyjne w Gdyni</h1>
     </header>
@@ -49,10 +49,10 @@
       <img class="HowWeWork__arrow--up" src="" alt="">
       <img class="howWeWork__picture" src="../assets/img/work5.jpeg" alt="">
       <img class="HowWeWork__arrow--down" src="" alt="">
-      <img id="about" class="howWeWork__picture" src="../assets/img/work6.jpeg" alt="">
+      <img class="howWeWork__picture" src="../assets/img/work6.jpeg" alt="">
     </section>
     <div class="lines"><img class="line" src="assets/img/line.svg" alt=""></div>
-    <section class="about">
+    <section  id="about" class="about">
       <h2 class="about__title">O nas</h2>
       <article class="about__section">
         <div class="about__background">
@@ -92,17 +92,19 @@
     </section>
     <section class="map">
       <img class="map__picture" src="../assets/img/map.png" alt="">
-      <p class="map__description">
+     <div class="map__background"> 
+       <p class="map__description">
         <span class="map__description--bold">Gdzie działamy</span> <br><br>
 
-        Nam dictum felis nec mi eleifend pulvinar. Ut eget euismod lorem.
+        Nam dictum felis nec mi eleifend pulvinar. Ut eget euismod lorem.<br><br>
         Praesent aliquet lorem eleifend, feugiat ex eu, mollis arcu. Class aptent taciti sociosqu ad litora torquent
         per conubia nostra, per inceptos himenaeos.
       </p>
+    </div>
     </section>
 
     <div class="lines"><img class="line" src="assets/img/line.svg" alt=""></div>
-    <section class="team">
+    <section id="team" class="team">
 
       <h2 class="team__title">Nasz zespół</h2>
       <p>Maecenas eu dignissim. Vivamus auctor felis at fringilla dictum.
@@ -117,7 +119,7 @@
       <img class="team__card" src="" alt="">
     </section>
     <div class="lines"><img class="line" src="assets/img/line.svg" alt=""></div>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <h2 class="portfolio__title">Portfolio</h2>
       <img class="portfolio__picture" src="" alt="">
       <p class="portfolio__decription">
@@ -153,7 +155,7 @@
 
     </section>
     <div class="lines"><img class="line" src="assets/img/line.svg" alt=""></div>
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2 class="contact__title"> Zapraszamy do kontaktu</h2>
       <p class="contact__number">123 456 789</p>
       <p class="contact__email"> email@email.com </p>
