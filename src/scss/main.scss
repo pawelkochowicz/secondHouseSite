@@ -69,17 +69,17 @@ body {
     margin-right: 5vw;
     position: relative;
   }
-    &__background:after {
-      content: "";
-      position: absolute;
-      top: -40px;
-      left: 40px;
-      width: 100%;
-      height: 70%;
-      background: rgba(147, 246, 0, 0.19);
-      z-index: -1;
-    }
-  
+  &__background:after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    width: 100%;
+    height: 70%;
+    background: rgba(147, 246, 0, 0.19);
+    z-index: -1;
+  }
+
   &__description {
     padding: 2%;
     &--bold {
@@ -103,23 +103,23 @@ body {
     margin-top: 7vh;
     position: relative;
   }
-    &__background:after {
-      content: "";
-      position: absolute;
-      top: -40px;
-      left: 40px;
-      width: 100%;
-      height: 60%;
-      background: rgba(147, 246, 0, 0.19);
-      z-index: -1;
+  &__background:after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    width: 100%;
+    height: 60%;
+    background: rgba(147, 246, 0, 0.19);
+    z-index: -1;
+  }
+  &__description {
+    padding: 2%;
+    &--bold {
+      font-weight: 700;
+      font-size: 1.3rem;
     }
-    &__description {
-      padding: 2%;
-      &--bold {
-        font-weight: 700;
-        font-size: 1.3rem;
-      }
-    }
+  }
 }
 
 .nav {
@@ -204,3 +204,50 @@ body {
   }
 }
 
+.team {
+  display: grid;
+  &__title {
+    grid-area: 1 / 1 / 2 / 4;
+    font-size: 2rem;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.22em;
+    margin-bottom: 8vh;
+  }
+  &__background {
+    display: flex;
+    justify-self: center;
+    grid-area: 2 / 1 / 3 / 4;
+    width: 800px;
+    height: auto;
+    position: relative;
+  }
+  &__background:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    width: 100%;
+    height: 90%;
+    background: rgba(147, 246, 0, 0.19);
+    z-index: -1;
+  }
+  &__card {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 354px;
+    margin-bottom: 8vh;
+  } 
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    margin-bottom: 8vh;
+    &--bold {
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+  }
+}
