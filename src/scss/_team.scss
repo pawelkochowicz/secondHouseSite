@@ -1,0 +1,41 @@
+.team {
+  display: grid;
+
+  &__background {
+    display: flex;
+    grid-area: 2 / 1 / 3 / 4;
+    height: auto;
+    justify-self: center;
+    position: relative;
+    width: 800px;
+  }
+  &__background:after {
+    content: "";
+    background: rgba(147, 246, 0, 0.19);
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: -20px;
+    left: 40px;
+    z-index: -1;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    margin-bottom: 8vh;
+    &--bold {
+        font-size: 1.3rem;
+      font-weight: 700;
+    }
+  }
+  &__title {
+    grid-area: 1 / 1 / 2 / 4;
+    font-size: 2rem;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.22em;
+    margin-bottom: 8vh;
+  }
+}
