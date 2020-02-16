@@ -16,8 +16,9 @@
     left: 40px;
     z-index: -1;
   }
-  &__button {
+  &__link {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
     &--visible {
@@ -27,7 +28,8 @@
     background-color: #93f600;
     border: none;
     text-decoration: none;
-
+    color: black;
+  
     }
     &--visible:active {
         transform: scale(0.99);
