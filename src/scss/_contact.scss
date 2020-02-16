@@ -2,27 +2,27 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 15vh auto;
-      position: relative;
-    
-    &:after {
-      content: "";
-      background: rgba(147, 246, 0, 0.19);
-      position: absolute;
-      width: 80%;
-      height: 60%;
-      top: 70px;
-      left: 130px;
-      z-index: -1;
+  position: relative;
+
+  &:after {
+    content: "";
+    background: rgba(147, 246, 0, 0.19);
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 100px;
+    left: 130px;
+    z-index: -1;
+  }
+  &__description {
+    padding: 2%;
+    width: 50%;
+    margin-left: 15vw;
+    &--bold {
+      font-weight: 700;
+      font-size: 1.3rem;
     }
-    &__description {
-        padding: 2%;
-        width: 50%;
-        margin-left: 15vw;
-      &--bold {
-        font-weight: 700;
-        font-size: 1.3rem;
-      }
-    }
+  }
   &__title {
     grid-area: 1 / 1 / 2 / 3;
     font-size: 2.5rem;
@@ -42,11 +42,11 @@
     margin-left: 15vw;
 
     &:before {
-        content: "";
-        background: url("../assets/img/phone-call2.svg");
-        height: 40px;
-        margin-right: 15px;
-        width: 40px;
+      content: "";
+      background: url("../assets/img/phone-call2.svg");
+      height: 40px;
+      margin-right: 15px;
+      width: 40px;
     }
   }
   &__email {
@@ -55,7 +55,7 @@
     margin-left: 15vw;
 
     &:before {
-        content: "";
+      content: "";
       background: url("../assets/img/email2.svg");
       height: 40px;
       margin-right: 15px;
@@ -68,7 +68,7 @@
     margin-left: 15vw;
 
     &:before {
-        content: "";
+      content: "";
       background: url("../assets/img/facebook2.svg");
       height: 40px;
       margin-right: 15px;
@@ -78,8 +78,8 @@
 }
 
 .footer {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    background-color: rgba(147, 246, 0, 0.19);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(147, 246, 0, 0.19);
 }
