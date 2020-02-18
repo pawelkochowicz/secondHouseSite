@@ -7,6 +7,7 @@
 @import "_portfolio";
 @import "_contact";
 @import "_gallery";
+@import "_howwework";
 @import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap&subset=latin-ext");
 html {
   box-sizing: border-box;
@@ -39,19 +40,7 @@ body {
   }
 }
 
-.howWeWork {
-  &__picture {
-    height: 10vw;
-    margin-bottom: 5vh;
-    width: auto;
-  }
-  &__title {
-    font-size: 2.2rem;
-    letter-spacing: 0.22em;
-    line-height: 56px;
-    text-align: center;
-  }
-}
+
 
 .line {
   justify-content: center;

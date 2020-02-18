@@ -39,3 +39,27 @@
     text-transform: uppercase;
   }
   
+  .gallery__link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    &--visible {
+      display: flex;
+      align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: #93f600;
+    border: none;
+    text-decoration: none;
+    color: black;
+    }
+    &--visible:active {
+        transform: scale(0.99);
+        outline: 1px solid #fff;
+        outline-offset: -4px;
+    }
+    &--visible:hover {
+        cursor: pointer;
+    }
+  }
