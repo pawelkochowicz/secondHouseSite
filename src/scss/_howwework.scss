@@ -1,0 +1,24 @@
+.howWeWork {
+    &__pictures {
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+    // &__picture {
+    //     display: flex;
+    // height: auto;
+    // justify-self: center;
+    // position: relative;
+    //     width: 100%;
+    //     max-width: 400px;
+    //     height: 280px;
+    //     overflow: hidden;
+    //     margin: 10px;
+    // }
+    &__title {
+      font-size: 2.2rem;
+      letter-spacing: 0.22em;
+      line-height: 56px;
+      text-align: center;
+    }
+  }
