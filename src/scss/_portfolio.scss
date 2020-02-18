@@ -18,10 +18,12 @@
   }
   &__link {
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 100%;
     &--visible {
+      display: flex;
+      align-items: center;
+    justify-content: center;
     margin: 5vw;
     width: 200px;
     height: 50px;
