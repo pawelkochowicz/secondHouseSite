@@ -1,44 +1,44 @@
 @import "_variables";
 @import "_mixins";
 
-
-.back__description {
-  @include cards__description;
-}
-
-.team__back {
+.work__back {
   @include cards;
-  background: rgba(147, 246, 0, 0.19);
+  background: $backgroundColor;
   transform: perspective(600px) rotateY(180deg);
 }
 
+.work__backDescription {
+@include cards__description;
+}
 
-.team__card {
+.work__card {
   height: 100%;
 }
 
-.team__cards {
+.work__cards {
   display: flex;
+  height: auto;
   justify-self: center;
-  margin-bottom: 8vh;
-  cursor: pointer;
-  width: 354px;
-  height: 425px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 280px;
+  margin: 10px;
 }
 
-.team__cards:hover > .team__front {
+.work__cards:hover > .work__front {
   transform: perspective(600px) rotateY(-180deg);
 }
 
-.team__cards:hover > .team__back {
+.work__cards:hover > .work__back {
   transform: perspective(600px) rotateY(0deg);
 }
 
-.team__cards--middle {
+.work__cards--middle {
   transform: translate(0, 0);
 }
 
-.team__front {
+.work__front {
   @include cards;
   transform: perspective(600px) rotateY(0deg);
 }
