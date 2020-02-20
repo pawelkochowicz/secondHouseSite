@@ -2,6 +2,8 @@
 @import "_mixins";
 
 .gallery__header {
+  display: flex;
+  flex-direction: column;
     overflow: hidden;
     background: $mainColor;
     padding: 10px 0;
@@ -44,7 +46,6 @@
   
   .gallery__link {
     display: flex;
-    justify-content: center;
     width: 100%;
     &--visible {
       display: flex;
@@ -55,7 +56,7 @@
     background-color: $mainColor;
     border: none;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     }
     &--visible:active {
         transform: scale(0.99);
