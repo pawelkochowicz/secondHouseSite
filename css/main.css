@@ -428,15 +428,15 @@ template {
       font-size: 1.3rem;
       font-weight: 700; }
   .team__title {
+    font-size: 2rem;
+    letter-spacing: 0.22em;
+    line-height: 56px;
+    text-align: center;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: 1 / 1 / 2 / 4;
-    font-size: 2rem;
-    line-height: 56px;
-    text-align: center;
-    letter-spacing: 0.22em;
     margin-bottom: 8vh; }
 
 .about__section {
@@ -715,23 +715,20 @@ template {
     left: 130px;
     z-index: -1; }
   .contact__description {
-    padding: 2%;
-    width: 50%;
-    margin-left: 15vw; }
+    padding: 2%; }
     .contact__description--bold {
       font-weight: 700;
       font-size: 1.3rem; }
   .contact__title {
+    font-size: 2rem;
+    letter-spacing: 0.22em;
+    line-height: 56px;
+    text-align: center;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
-    grid-area: 1 / 1 / 2 / 3;
-    font-size: 2.5rem;
-    line-height: 56px;
-    height: 5vw;
-    letter-spacing: 0.28em;
-    text-align: center; }
+    grid-area: 1 / 1 / 2 / 3; }
   .contact__informations {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -882,7 +879,7 @@ footer {
   grid-template-rows: 1fr 1fr; }
 
 .howWeWork__title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   letter-spacing: 0.22em;
   line-height: 56px;
   text-align: center; }
