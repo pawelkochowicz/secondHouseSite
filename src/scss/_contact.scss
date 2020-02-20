@@ -9,7 +9,7 @@
 
   &:after {
     content: "";
-    background: rgba(147, 246, 0, 0.19);
+    background: $backgroundColor;
     position: absolute;
     width: 80%;
     height: 50%;
@@ -18,21 +18,13 @@
     z-index: -1;
   }
   &__description {
-    padding: 2%;
-    width: 50%;
-    margin-left: 15vw;
-    &--bold {
-      font-weight: 700;
-      font-size: 1.3rem;
-    }
+    @include descriptions;
+    // width: 50%;
+    // margin-left: 15vw;
   }
   &__title {
+    @include section__title;
     grid-area: 1 / 1 / 2 / 3;
-    font-size: 2.5rem;
-    line-height: 56px;
-    height: 5vw;
-    letter-spacing: 0.28em;
-    text-align: center;
   }
   &__informations {
     display: flex;
@@ -40,10 +32,7 @@
     font-size: 1.5rem;
   }
   &__number {
-    display: flex;
-    flex-direction: row;
-    margin-left: 15vw;
-
+    @include contacts;
     &:before {
       content: "";
       background: url("../assets/img/phone-call2.svg");
@@ -53,10 +42,7 @@
     }
   }
   &__email {
-    display: flex;
-    flex-direction: row;
-    margin-left: 15vw;
-
+    @include contacts;
     &:before {
       content: "";
       background: url("../assets/img/email2.svg");
@@ -66,10 +52,7 @@
     }
   }
   &__fb {
-    display: flex;
-    flex-direction: row;
-    margin-left: 15vw;
-
+    @include contacts;
     &:before {
       content: "";
       background: url("../assets/img/facebook2.svg");
@@ -84,6 +67,6 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: rgba(147, 246, 0, 0.19);
+  background-color: $backgroundColor;
   color: black;
 }

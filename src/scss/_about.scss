@@ -24,11 +24,7 @@
     z-index: -1;
   }
   &__description {
-    padding: 2%;
-    &--bold {
-      font-weight: 700;
-      font-size: 1.3rem;
-    }
+@include descriptions;
   }
   &__picture {
     box-shadow: 4px -4px 4px #93f600;
@@ -37,10 +33,7 @@
     width: 40vw;
   }
   &__title {
-    font-size: 2rem;
-    letter-spacing: 0.22em;
-    line-height: 56px;
-    text-align: center;
+    @include section__title;
   }
 }
 
@@ -69,7 +62,7 @@
     flex-direction: column;
     height: 250px;
     width: 230px;
-    background-color: rgba(147, 246, 0, 0.19);
+    background-color: $backgroundColor;
     margin: 7vw 5vw 7vw 5vw;
   }
 }
@@ -87,7 +80,7 @@
   &__background:after {
     content: "";
     position: absolute;
-    background: rgba(147, 246, 0, 0.19);
+    background: $backgroundColor;
     top: -40px;
     left: 40px;
     width: 100%;
