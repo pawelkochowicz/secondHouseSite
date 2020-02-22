@@ -674,11 +674,13 @@ template {
     font-size: 1.3rem; }
 
 .portfolio__title {
+  position: relative;
   font-size: 2rem;
   letter-spacing: 0.22em;
   line-height: 56px;
   text-align: center;
-  margin-bottom: 3vw; }
+  margin-bottom: 3vw;
+  padding-bottom: 10px; }
 
 .portfolio__galery {
   display: -webkit-box;
@@ -696,6 +698,14 @@ template {
   width: 600px;
   -webkit-box-shadow: 4px -4px 4px #93f600;
           box-shadow: 4px -4px 4px #93f600; }
+
+.parallax-window {
+  height: 400px;
+  width: 100%;
+  background: transparent; }
+
+.parallax-mirror {
+  height: 100px; }
 
 .contact {
   display: -ms-grid;
@@ -796,6 +806,13 @@ template {
   color: black; }
 
 .gallery__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
   background: #93f600;
   padding: 10px 0;
@@ -841,9 +858,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%; }
   .gallery__link--visible {
     display: -webkit-box;
@@ -860,7 +874,7 @@ footer {
     background-color: #93f600;
     border: none;
     text-decoration: none;
-    color: black; }
+    color: white; }
   .gallery__link--visible:active {
     -webkit-transform: scale(0.99);
         -ms-transform: scale(0.99);
