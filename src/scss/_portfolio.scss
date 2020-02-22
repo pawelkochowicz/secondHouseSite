@@ -55,8 +55,11 @@
     }
   }
   &__title {
+    position: relative;
     @include section__title;
     margin-bottom: 3vw;
+    padding-bottom: 10px;
+
   }
   &__galery {
     display: flex;
@@ -71,8 +74,11 @@
 
 
 .parallax-window {
-  min-height: 400px;
+  height: 400px;
   width: 100%;
 	background: transparent;
 }
 
+.parallax-mirror {
+  height: 100px;
+}
