@@ -674,13 +674,10 @@ template {
     font-size: 1.3rem; }
 
 .portfolio__title {
-  position: relative;
   font-size: 2rem;
   letter-spacing: 0.22em;
   line-height: 56px;
-  text-align: center;
-  margin-bottom: 3vw;
-  padding-bottom: 10px; }
+  text-align: center; }
 
 .portfolio__galery {
   display: -webkit-box;
@@ -700,12 +697,16 @@ template {
           box-shadow: 4px -4px 4px #93f600; }
 
 .parallax-window {
-  height: 400px;
+  position: relative;
+  height: 100px;
   width: 100%;
   background: transparent; }
-
-.parallax-mirror {
-  height: 100px; }
+  .parallax-window:after {
+    content: "Portfolio";
+    position: absolute;
+    color: white;
+    margin-top: 20px;
+    margin-left: -5%; }
 
 .contact {
   display: -ms-grid;
