@@ -1,7 +1,6 @@
 @import "_variables";
 @import "_mixins";
 
-
 .portfolio {
   &__background {
     margin-top: 7vh;
@@ -27,24 +26,22 @@
     &--visible {
       display: flex;
       align-items: center;
-    justify-content: center;
-    margin: 5vw;
-    width: 200px;
-    height: 50px;
-    background-color: $mainColor;
-    border: none;
-    text-decoration: none;
-    color: black;
-  
+      justify-content: center;
+      margin: 5vw;
+      width: 200px;
+      height: 50px;
+      background-color: $mainColor;
+      border: none;
+      text-decoration: none;
+      color: black;
     }
     &--visible:active {
-        transform: scale(0.99);
-        outline: 1px solid #fff;
-        outline-offset: -4px;
+      transform: scale(0.99);
+      outline: 1px solid #fff;
+      outline-offset: -4px;
     }
     &--visible:hover {
-        cursor: pointer;
-
+      cursor: pointer;
     }
   }
   &__description {
@@ -55,11 +52,9 @@
     }
   }
   &__title {
-    position: relative;
-    @include section__title;
-    margin-bottom: 3vw;
-    padding-bottom: 10px;
 
+    @include section__title;
+    // color: white;
   }
   &__galery {
     display: flex;
@@ -72,13 +67,18 @@
   }
 }
 
-
 .parallax-window {
-  height: 400px;
-  width: 100%;
-	background: transparent;
-}
-
-.parallax-mirror {
+  position: relative;
   height: 100px;
+  width: 100%;
+  background: transparent;
+  &:after {
+    content: "Portfolio";
+    position: absolute;
+    color: white;
+    margin-top: 20px;
+    margin-left: -5%;
+    // @include section__title;
+
+  }
 }
