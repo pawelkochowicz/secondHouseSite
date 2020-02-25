@@ -8,7 +8,7 @@
   }
   &__background {
     margin-top: 7vh;
-    margin-left: 10vw;
+    margin-left: 10%;
     margin-right: 5vw;
     position: relative;
     width: 400px;
@@ -27,10 +27,11 @@
 @include descriptions;
   }
   &__picture {
+    justify-content: flex-start;
     box-shadow: 4px -4px 4px #93f600;
-    height: auto;
-    margin-left: 7vw;
-    width: 40vw;
+    height: 25vw;
+    margin-left: 7%;
+    width: auto;
   }
   &__title {
     @include section__title;
