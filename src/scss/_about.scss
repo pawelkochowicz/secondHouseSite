@@ -16,7 +16,7 @@
   }
   &__background:after {
     content: "";
-    background: rgba(147, 246, 0, 0.19);
+    background: $backgroundColor;
     position: absolute;
     width: 100%;
     height: 70%;
@@ -29,7 +29,7 @@
   }
   &__picture {
     justify-content: flex-start;
-    box-shadow: 4px -4px 4px #93f600;
+    box-shadow: 4px -4px 4px $mainColor;
     margin-top: 2vw;
     height: 25vw;
     width: auto;

@@ -6,7 +6,7 @@
   position: absolute;
   transition: transform 0.6s linear;
   border-radius: 5px;
-  border: 2px solid rgba(148, 246, 0, 0.295);
+  border: 2px solid $backgroundColor;
   cursor: help;
 }
 

@@ -8,7 +8,7 @@
 
 .team__back {
   @include cards;
-  background: rgba(147, 246, 0, 0.19);
+  background: $backgroundColor;
   transform: perspective(600px) rotateY(180deg);
 }
 
