@@ -339,9 +339,9 @@ template {
   transition: transform 0.6s linear;
   transition: transform 0.6s linear, -webkit-transform 0.6s linear;
   border-radius: 5px;
-  border: 2px solid rgba(196, 242, 216, 0.19);
+  border: 2px solid rgba(24, 65, 57, 0.14);
   cursor: help;
-  background: rgba(196, 242, 216, 0.19);
+  background: rgba(24, 65, 57, 0.14);
   -webkit-transform: perspective(600px) rotateY(180deg);
           transform: perspective(600px) rotateY(180deg); }
 
@@ -384,7 +384,7 @@ template {
   transition: transform 0.6s linear;
   transition: transform 0.6s linear, -webkit-transform 0.6s linear;
   border-radius: 5px;
-  border: 2px solid rgba(196, 242, 216, 0.19);
+  border: 2px solid rgba(24, 65, 57, 0.14);
   cursor: help;
   -webkit-transform: perspective(600px) rotateY(0deg);
           transform: perspective(600px) rotateY(0deg); }
@@ -407,7 +407,7 @@ template {
     width: 800px; }
   .team__background:after {
     content: "";
-    background: rgba(196, 242, 216, 0.19);
+    background: rgba(24, 65, 57, 0.14);
     position: absolute;
     width: 100%;
     height: 90%;
@@ -458,7 +458,7 @@ template {
 
 .about__background:after {
   content: "";
-  background: rgba(196, 242, 216, 0.19);
+  background: rgba(24, 65, 57, 0.14);
   position: absolute;
   width: 100%;
   height: 70%;
@@ -476,8 +476,8 @@ template {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-shadow: 4px -4px 4px #5D8C71;
-          box-shadow: 4px -4px 4px #5D8C71;
+  -webkit-box-shadow: 4px -4px 4px #499F6B;
+          box-shadow: 4px -4px 4px #499F6B;
   margin-top: 2vw;
   height: 25vw;
   width: auto; }
@@ -530,7 +530,7 @@ template {
             flex-direction: column;
     height: 250px;
     width: 20%;
-    background-color: rgba(196, 242, 216, 0.19);
+    background-color: rgba(24, 65, 57, 0.14);
     margin-top: 7vw;
     margin-bottom: 7vw;
     margin-left: 3vw;
@@ -553,7 +553,7 @@ template {
   .map__background:after {
     content: "";
     position: absolute;
-    background: rgba(196, 242, 216, 0.19);
+    background: rgba(24, 65, 57, 0.14);
     top: -40px;
     left: 40px;
     width: 100%;
@@ -593,7 +593,7 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 1px solid rgba(196, 242, 216, 0.19);
+    border: 1px solid rgba(24, 65, 57, 0.14);
     color: black;
     font-size: 0.8rem;
     height: 40px;
@@ -603,7 +603,7 @@ template {
     -o-transition: all 0.3s;
     transition: all 0.3s; }
     .nav__link:hover {
-      border: 1px solid #5D8C71; }
+      border: 1px solid #499F6B; }
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -635,7 +635,7 @@ template {
 
 .portfolio__background:after {
   content: "";
-  background: rgba(196, 242, 216, 0.19);
+  background: rgba(24, 65, 57, 0.14);
   position: absolute;
   width: 100%;
   height: 70%;
@@ -664,7 +664,7 @@ template {
     margin: 5vw;
     width: 200px;
     height: 50px;
-    background-color: #ADD9C9;
+    background-color: #499F6B;
     border: none;
     text-decoration: none;
     color: black; }
@@ -703,8 +703,8 @@ template {
 
 .portfolio__picture {
   width: 600px;
-  -webkit-box-shadow: 4px -4px 4px #5D8C71;
-          box-shadow: 4px -4px 4px #5D8C71; }
+  -webkit-box-shadow: 4px -4px 4px #499F6B;
+          box-shadow: 4px -4px 4px #499F6B; }
 
 .parallax-window {
   position: relative;
@@ -728,7 +728,7 @@ template {
   position: relative; }
   .contact:after {
     content: "";
-    background: rgba(196, 242, 216, 0.19);
+    background: rgba(24, 65, 57, 0.14);
     position: absolute;
     width: 80%;
     height: 50%;
@@ -819,7 +819,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(196, 242, 216, 0.19);
+  background-color: rgba(24, 65, 57, 0.14);
   color: black; }
 
 .gallery__header {
@@ -831,7 +831,7 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  background: #5D8C71;
+  background: #499F6B;
   padding: 10px 0;
   text-align: center;
   color: white;
@@ -865,7 +865,7 @@ template {
 
 footer {
   overflow: hidden;
-  background: #5D8C71;
+  background: #499F6B;
   padding: 10px 0;
   text-align: center;
   color: white;
@@ -888,7 +888,7 @@ footer {
             justify-content: center;
     width: 200px;
     height: 50px;
-    background-color: #5D8C71;
+    background-color: #499F6B;
     border: none;
     text-decoration: none;
     color: white; }
@@ -928,9 +928,9 @@ footer {
   transition: transform 0.6s linear;
   transition: transform 0.6s linear, -webkit-transform 0.6s linear;
   border-radius: 5px;
-  border: 2px solid rgba(196, 242, 216, 0.19);
+  border: 2px solid rgba(24, 65, 57, 0.14);
   cursor: help;
-  background: rgba(196, 242, 216, 0.19);
+  background: rgba(24, 65, 57, 0.14);
   -webkit-transform: perspective(600px) rotateY(180deg);
           transform: perspective(600px) rotateY(180deg); }
 
@@ -992,7 +992,7 @@ footer {
   transition: transform 0.6s linear;
   transition: transform 0.6s linear, -webkit-transform 0.6s linear;
   border-radius: 5px;
-  border: 2px solid rgba(196, 242, 216, 0.19);
+  border: 2px solid rgba(24, 65, 57, 0.14);
   cursor: help;
   -webkit-transform: perspective(600px) rotateY(0deg);
           transform: perspective(600px) rotateY(0deg); }
