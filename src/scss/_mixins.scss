@@ -4,7 +4,7 @@
   overflow: hidden;
   backface-visibility: hidden;
   position: absolute;
-  transition: transform 0.6s linear;
+  transition: transform 0.4s linear;
   border-radius: 5px;
   border: 2px solid $backgroundColor;
   cursor: help;
@@ -19,6 +19,24 @@
   &--bold {
     font-size: 1.3rem;
     font-weight: 700;
+  }
+}
+
+@mixin cards__icon {
+  &:after {
+    content: "i";
+    position: absolute;
+    font-family: "Simonetta";
+    color: #3A7D70;
+    right: 30px;
+    top: 30px;
+    font-weight: 700;
+    font-size: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background-color: rgba(54, 54, 54, 0.151);
+    text-align: center;
   }
 }
 
@@ -38,15 +56,14 @@
 }
 
 @mixin contacts {
-    display: flex;
-    flex-direction: row;
-    margin-left: 15vw;
-    &:before {
-      content: "";
-      position: relative;
-      height: 25px;
-      margin-right: 15px;
-      width: 25px;
-
-    }
+  display: flex;
+  flex-direction: row;
+  margin-left: 15vw;
+  &:before {
+    content: "";
+    position: relative;
+    height: 25px;
+    margin-right: 15px;
+    width: 25px;
+  }
 }

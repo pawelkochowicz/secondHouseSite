@@ -40,5 +40,6 @@
 
 .work__front {
   @include cards;
+  @include cards__icon;
   transform: perspective(600px) rotateY(0deg);
 }
