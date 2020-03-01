@@ -45,6 +45,8 @@
     }
   }
   &__description {
+    display: flex;
+    flex-direction: column;
     padding: 2%;
     &--bold {
       font-weight: 700;
@@ -54,15 +56,19 @@
   &__title {
 
     @include section__title;
-    // color: white;
   }
   &__galery {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      margin-top: 10vh;
   }
   &__picture {
-    width: 600px;
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    max-width: 600px;
+    height: auto;
     box-shadow: 4px -4px 4px $mainColor;
   }
 }
