@@ -632,6 +632,18 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    @media (max-width: 1220px) {
+      .nav__list {
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+  @media (max-width: 1220px) and (max-width: 1220px) {
+    .nav__list--visible {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
   .nav__logo {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -640,6 +652,33 @@ template {
         align-content: center;
     height: 11vh;
     margin-left: 2vh; }
+  .nav__switcher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: none;
+    border: none;
+    width: 105px;
+    height: 40px;
+    display: flex; }
+    @media (min-width: 1220px) {
+      .nav__switcher {
+        display: none;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
 
 .portfolio__background {
   margin-top: 7vh;
@@ -735,12 +774,12 @@ template {
   -webkit-box-shadow: 4px -4px 4px #499F6B;
           box-shadow: 4px -4px 4px #499F6B; }
 
-.parallax-window {
+.portfolio__parallax {
   position: relative;
   height: 100px;
   width: 100%;
   background: transparent; }
-  .parallax-window:after {
+  .portfolio__parallax:after {
     content: "Portfolio";
     position: absolute;
     color: white;
