@@ -71,18 +71,19 @@
     height: auto;
     box-shadow: 4px -4px 4px $mainColor;
   }
-}
-
-.parallax-window {
-  position: relative;
-  height: 100px;
-  width: 100%;
-  background: transparent;
-  &:after {
-    content: "Portfolio";
-    position: absolute;
-    color: white;
-    margin-top: 20px;
-    margin-left: -5%;
+  &__parallax {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    &:after {
+      content: "Portfolio";
+      position: absolute;
+      color: white;
+      margin-top: 20px;
+      margin-left: -5%;
+    }
   }
 }
+
+

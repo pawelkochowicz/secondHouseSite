@@ -2,4 +2,4 @@
 
 console.log(`Hello world!`);
 
-$('.parallax-window').parallax({imageSrc: 'assets/img/parallax.jpeg'});
+$('.portfolio__parallax--js').parallax({imageSrc: 'assets/img/parallax.jpeg'});
