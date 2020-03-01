@@ -2,44 +2,62 @@
 @import "_mixins";
 
 .nav {
-    z-index: 10;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 12vh;
-    background-color: white;
-    position: fixed;
-    height: 12vh;
-    width: 99vw;
-    &__button {
-      list-style-type: none;
-      margin: 1vh;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 12vh;
+  background-color: white;
+  position: fixed;
+  height: 12vh;
+  width: 99vw;
+  &__button {
+    list-style-type: none;
+    margin: 1vh;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $backgroundColor;
+    color: black;
+    font-size: 0.8rem;
+    height: 40px;
+    width: 105px;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover {
+      border: 1px solid $mainColor;
     }
-    &__link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid $backgroundColor;
-      color: black;
-      font-size: 0.8rem;
-      height: 40px;
-      width: 105px;
-      text-decoration: none;
-      transition: all 0.3s;
-      &:hover {
-        border: 1px solid $mainColor;
+  }
+  &__list {
+    @include nav__buttons;
+    @media (max-width: 1220px) {
+      display: none;
+      flex-direction: column;
+      &--visible {
+        @media (max-width: 1220px) {
+          display: flex;
+        }
       }
     }
-    &__list {
-      display: flex;
-      flex-direction: row;
-      align-self: center;
-      justify-content: center;
-    }
+  }
     &__logo {
       justify-content: flex-start;
       align-content: center;
       height: 11vh;
-margin-left: 2vh;
-  }
-} 
-  
+      margin-left: 2vh;
+    }
+    &__switcher {
+      @include nav__buttons;
+        background: none;
+      border: none;
+      width: 105px;
+      height: 40px;
+      display: flex;
+      @media (min-width: 1220px) {
+        display: none;
+        justify-content: center;
+align-items: center;
+      }
+    }
+}
