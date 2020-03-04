@@ -595,6 +595,18 @@ template {
   position: fixed;
   height: 12vh;
   width: 99vw; }
+  @media (max-width: 900px) {
+    .nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: auto;
+      background-color: transparent;
+      text-align: center; } }
   .nav__button {
     list-style-type: none;
     margin: 1vh; }
@@ -617,6 +629,9 @@ template {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
+    @media (max-width: 900px) {
+      .nav__link {
+        background-color: white; } }
     .nav__link:hover {
       border: 1px solid #499F6B; }
   .nav__list {
@@ -632,18 +647,27 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    @media (max-width: 1220px) {
+    @media (max-width: 900px) {
       .nav__list {
         display: none;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; } }
-  @media (max-width: 1220px) and (max-width: 1220px) {
+  @media (max-width: 900px) and (max-width: 900px) {
     .nav__list--visible {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      background-color: transparent;
+      margin: 0;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 0; } }
   .nav__logo {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -652,6 +676,14 @@ template {
         align-content: center;
     height: 11vh;
     margin-left: 2vh; }
+    @media (max-width: 900px) {
+      .nav__logo {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   .nav__switcher {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -669,8 +701,11 @@ template {
     border: none;
     width: 105px;
     height: 40px;
-    display: flex; }
-    @media (min-width: 1220px) {
+    display: flex;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 2vh; }
+    @media (min-width: 901px) {
       .nav__switcher {
         display: none;
         -webkit-box-pack: center;
@@ -1101,6 +1136,9 @@ body {
     margin-top: 12vh;
     width: 100%;
     height: auto; }
+    @media (max-width: 900px) {
+      .header__picture {
+        margin-top: 0; } }
   .header__title {
     font-size: 2.5rem;
     line-height: 66px;
