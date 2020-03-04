@@ -19,8 +19,6 @@
   }
   &__description {
     @include descriptions;
-    // width: 50%;
-    // margin-left: 15vw;
   }
   &__title {
     @include section__title;

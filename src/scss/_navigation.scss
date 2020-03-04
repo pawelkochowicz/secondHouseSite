@@ -10,6 +10,13 @@
   position: fixed;
   height: 12vh;
   width: 99vw;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: transparent;
+    text-align: center;
+  }
   &__button {
     list-style-type: none;
     margin: 1vh;
@@ -25,39 +32,54 @@
     width: 105px;
     text-decoration: none;
     transition: all 0.3s;
+    @media (max-width: 900px) {
+      background-color: white;
+    }
     &:hover {
       border: 1px solid $mainColor;
     }
   }
   &__list {
     @include nav__buttons;
-    @media (max-width: 1220px) {
+    @media (max-width: 900px) {
       display: none;
       flex-direction: column;
       &--visible {
-        @media (max-width: 1220px) {
+        @media (max-width: 900px) {
           display: flex;
+          background-color: transparent;
+          margin: 0;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
         }
       }
     }
   }
-    &__logo {
-      justify-content: flex-start;
-      align-content: center;
-      height: 11vh;
-      margin-left: 2vh;
+  &__logo {
+    justify-content: flex-start;
+    align-content: center;
+    height: 11vh;
+    margin-left: 2vh;
+    @media (max-width: 900px) {
+      justify-content: center;
+      align-items: center;
     }
-    &__switcher {
-      @include nav__buttons;
-        background: none;
-      border: none;
-      width: 105px;
-      height: 40px;
-      display: flex;
-      @media (min-width: 1220px) {
-        display: none;
-        justify-content: center;
-align-items: center;
-      }
+  }
+  &__switcher {
+    @include nav__buttons;
+    background: none;
+    border: none;
+    width: 105px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 2vh;
+    @media (min-width: 901px) {
+      display: none;
+      justify-content: center;
+      align-items: center;
     }
+  }
 }
