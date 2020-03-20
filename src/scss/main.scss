@@ -38,9 +38,6 @@ body {
     margin-top: 12vh;
     width: 100%;
     height: auto;
-    @media (max-width: 900px) {
-      margin-top: 0;
-    }
   }
   &__title {
     font-size: 2.5rem;
