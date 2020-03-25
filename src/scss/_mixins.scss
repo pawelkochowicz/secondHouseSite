@@ -27,7 +27,7 @@
     content: "i";
     position: absolute;
     font-family: "Simonetta";
-    color: #3A7D70;
+    color: #3a7d70;
     right: 30px;
     top: 30px;
     font-weight: 700;
@@ -70,6 +70,6 @@
 
 @mixin nav__buttons {
   display: flex;
-      flex-direction: row;
-      margin-right: 30px;
+  flex-direction: row;
+  margin-right: 30px;
 }
