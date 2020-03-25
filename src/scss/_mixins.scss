@@ -71,6 +71,5 @@
 @mixin nav__buttons {
   display: flex;
       flex-direction: row;
-      align-self: center;
-      justify-content: center;
+      margin-right: 30px;
 }
