@@ -8,13 +8,7 @@
   justify-content: center;
   background-color: white;
   position: fixed;
-  // height: 12vh;
   width: 99vw;
-  @media (max-width: 900px) {
-    // text-align: center;
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-template-rows: 12vh 1fr;
-  }
   &__button {
     list-style-type: none;
     margin: 1vh;
@@ -45,42 +39,39 @@
       display: none;
       flex-direction: column;
       &--visible {
-        @media (max-width: 900px) {
-          background-color: rgba(255, 255, 255, 0.897);
+          display: block;
+          font-size: 16px;
+          line-height: 2em;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          list-style-position: inside;
+          margin-top: 85px;
           flex-direction: column;
-
-        }
+        
       }
     }
   }
   &__logo {
-    justify-content: flex-start;
-    align-content: center;
-    height: 11vh;
-    margin-right: 4vh;
-    @media (max-width: 900px) {
-      grid-area: 1 / 1 / 2 / 2;
-      justify-content: center;
-      align-items: center;
-    }
+    position: fixed;  
+    left: 20px;
   }
   &__switcher {
-    @include nav__buttons;
-    align-content: flex-end;
-    background: none;
-    border: none;
-    // color: rgb(0, 0, 0);
-    display: flex;
-    // font-size: 265%;
-
-    // background: none;
-    // border: none;
-    width: 105px;
-    height: 40px;
-    display: flex;
-    cursor: pointer;
     font-size: 2rem;
-    margin-left: 50%;
+    background-color: white;
+    line-height: 2em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: fixed;
+    right: 0;
+    margin-right: 65px;
+    top: 8px;
+    z-index: 9998;
+    cursor: pointer;
+    display: block;
     @media (min-width: 901px) {
       display: none;
     }
