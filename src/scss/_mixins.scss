@@ -8,6 +8,9 @@
   border-radius: 5px;
   border: 2px solid $backgroundColor;
   cursor: help;
+  @media (max-width: 600px) {
+flex-wrap: wrap;
+  }
 }
 
 @mixin cards__description {
@@ -45,6 +48,9 @@
   letter-spacing: 0.22em;
   line-height: 56px;
   text-align: center;
+  @media (max-width: 600px) {
+    font-size: 1.5rem;
+  }
 }
 
 @mixin descriptions {
@@ -52,6 +58,9 @@
   &--bold {
     font-weight: 700;
     font-size: 1.3rem;
+  }
+  @media (max-width: 600px) {
+    font-size: 1rem;
   }
 }
 

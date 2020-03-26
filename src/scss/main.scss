@@ -44,6 +44,10 @@ body {
     line-height: 66px;
     letter-spacing: 0.22em;
     text-align: center;
+    @media (max-width: 600px) {
+      font-size: 2rem;
+    }
+
   }
 }
 

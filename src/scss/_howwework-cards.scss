@@ -1,6 +1,12 @@
 @import "_variables";
 @import "_mixins";
 
+.howWeWork__pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .work__back {
   @include cards;
   background: $backgroundColor;

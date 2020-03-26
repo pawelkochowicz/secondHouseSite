@@ -6,6 +6,12 @@
   @include cards__description;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .team__back {
   @include cards;
   background: $backgroundColor;
@@ -24,6 +30,7 @@
   cursor: pointer;
   width: 354px;
   height: 425px;
+  margin: 5px;
 }
 
 .team__cards:hover > .team__front {
