@@ -3,16 +3,23 @@
 
 .about {
   &__section {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__background {
     margin-top: 8vh;
-    margin-left: 25%;
-    margin-right: 5vw;
+    margin-right: 10vw;
     position: relative;
     width: 400px;
+    @media (max-width: 600px) {
+      width: 75%;
+    }
   }
   &__background:after {
     content: "";
@@ -25,7 +32,7 @@
     z-index: -1;
   }
   &__description {
-@include descriptions;
+    @include descriptions;
   }
   &__picture {
     justify-content: flex-start;
@@ -33,6 +40,10 @@
     margin-top: 2vw;
     height: 25vw;
     width: auto;
+    @media (max-width: 900px) {
+      width: 80%;
+      height: auto;
+    }
   }
   &__title {
     @include section__title;
