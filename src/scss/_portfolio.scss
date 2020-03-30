@@ -7,7 +7,11 @@
     margin-left: 10vw;
     margin-right: 5vw;
     position: relative;
-    width: 500px;
+    width: 30vw;
+    @media (max-width:900px) {
+width: 85%;
+margin-left: 5vw;
+    }
   }
   &__background:after {
     content: "";
@@ -45,31 +49,34 @@
     }
   }
   &__description {
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    &--bold {
-      font-weight: 700;
-      font-size: 1.3rem;
-    }
+   @include descriptions;
   }
   &__title {
 
     @include section__title;
   }
   &__galery {
-    display: grid;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
       margin-top: 10vh;
+      @media (max-width:900px) {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+      }
   }
   &__picture {
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
-    max-width: 600px;
-    height: auto;
+    max-height: 25vw;
+    width: auto;
     box-shadow: 4px -4px 4px $mainColor;
+    @media (max-width: 900px) {
+     height: 60vw;
+     max-height: none;
+    }
   }
   &__parallax {
     position: relative;
