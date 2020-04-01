@@ -59,7 +59,8 @@ margin-left: 5vw;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
-      margin-top: 10vh;
+      margin-top: 5vw;
+      margin-bottom: 2vw;
       @media (max-width:900px) {
        display: flex;
        flex-direction: column;

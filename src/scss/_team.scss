@@ -2,6 +2,7 @@
 @import "_mixins";
 
 .team {
+  margin-top: 3vw;
 
   &__background {
     display: flex;
@@ -9,9 +10,10 @@
     justify-self: center;
     position: relative;
     width: 70%;
-    margin-left: 3vw;
+    margin-left: 7vw;
     @media (max-width: 900px) {
-width: 95%;
+      width: 95%;
+      margin-left: 2vw;
     }
   }
   &__background:after {
@@ -25,10 +27,11 @@ width: 95%;
     z-index: -1;
   }
   &__description {
-@include descriptions;
+    @include descriptions;
   }
   &__title {
     @include section__title;
     grid-area: 1 / 1 / 2 / 4;
+    margin-bottom: 3vw;
   }
 }
