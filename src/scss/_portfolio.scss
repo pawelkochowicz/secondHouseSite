@@ -75,7 +75,7 @@ margin-left: 5vw;
     width: auto;
     box-shadow: 4px -4px 4px $mainColor;
     @media (max-width: 900px) {
-     height: 60vw;
+     width: 80vw;
      max-height: none;
     }
   }
@@ -90,6 +90,10 @@ margin-left: 5vw;
       color: white;
       margin-top: 20px;
       margin-left: -5%;
+      @media (max-width: 640px) {
+        margin-left: -15%;
+
+      }
     }
   }
 }
