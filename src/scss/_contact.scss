@@ -24,8 +24,14 @@
       left: 30px;
     }
   }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 9vw;
+  }
   &__description {
     @include descriptions;
+    width: 40vw;
     @media (max-width: 600px) {
       display: none;
     }
@@ -38,9 +44,11 @@
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
+    align-items: flex-end;
     @media(max-width: 600px) {
       margin-bottom: 6vw;
-
+align-items: flex-start;
+margin-left: 5vw;
     }
    }
   &__number {
