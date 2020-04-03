@@ -7,7 +7,10 @@
   grid-template-rows: 15vh auto;
   position: relative;
   margin-top: 2vw;
-
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
   &:after {
     content: "";
     background: $backgroundColor;
@@ -17,9 +20,15 @@
     top: 100px;
     left: 130px;
     z-index: -1;
+    @media (max-width: 768px) {
+      left: 30px;
+    }
   }
   &__description {
     @include descriptions;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   &__title {
     @include section__title;
@@ -29,7 +38,11 @@
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-  }
+    @media(max-width: 600px) {
+      margin-bottom: 6vw;
+
+    }
+   }
   &__number {
     @include contacts;
     &:before {

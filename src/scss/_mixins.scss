@@ -9,7 +9,7 @@
   border: 2px solid $backgroundColor;
   cursor: help;
   @media (max-width: 600px) {
-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -68,6 +68,9 @@ flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   margin-left: 15vw;
+  @media (max-width: 768px) {
+    margin-left: 8vw;
+  }
   &:before {
     content: "";
     position: relative;
