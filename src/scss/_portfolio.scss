@@ -59,7 +59,7 @@ margin-left: 5vw;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
-      margin-top: 5vw;
+      margin-top: 3vw;
       margin-bottom: 2vw;
       @media (max-width:900px) {
        display: flex;
@@ -70,13 +70,12 @@ margin-left: 5vw;
   }
   &__picture {
     grid-area: 1 / 2 / 2 / 3;
-    display: flex;
-    max-height: 25vw;
+    max-width: 40vw;
+    margin-top: 3vw;
     width: auto;
     box-shadow: 4px -4px 4px $mainColor;
     @media (max-width: 900px) {
-     width: 80vw;
-     max-height: none;
+     max-width: 80vw;
     }
   }
   &__parallax {
