@@ -929,8 +929,18 @@ template {
     @media (max-width: 768px) {
       .contact:after {
         left: 30px; } }
+  .contact__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 9vw; }
   .contact__description {
-    padding: 2%; }
+    padding: 2%;
+    width: 40vw; }
     .contact__description--bold {
       font-weight: 700;
       font-size: 1.3rem; }
@@ -961,10 +971,17 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
     @media (max-width: 600px) {
       .contact__informations {
-        margin-bottom: 6vw; } }
+        margin-bottom: 6vw;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        margin-left: 5vw; } }
   .contact__number {
     display: -webkit-box;
     display: -ms-flexbox;
