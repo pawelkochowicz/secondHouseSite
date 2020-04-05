@@ -25,9 +25,18 @@
     top: -20px;
     left: 80px;
     z-index: -1;
+    @media (max-width:900px) {
+      height: 100%;
+      width: 80%;
+    }
   }
   &__description {
     @include descriptions;
+    @media (max-width: 600px) {
+      width: 80%;
+      margin-left: 3vw;
+    }
+
   }
   &__title {
     @include section__title;

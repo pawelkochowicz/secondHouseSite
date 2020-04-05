@@ -121,6 +121,10 @@
     margin-left: 10vw;
     margin-top: 7vh;
     width: 400px;
+    @media (max-width:900px) {
+      width: 70%;
+    }
+
   }
   &__background:after {
     content: "";
@@ -134,9 +138,25 @@
     @media (max-width:900px) {
       height: 100%;
     }
+    @media (max-width:600px) {
+      height: 100%;
+      width: 90%;
+      left: 20px;
+    }
+
    }
   &__description {
     @include descriptions;
+    @media (max-width: 950px) {
+      width: 85%;
+    }
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      width: 80%;
+    }
     }
   &__picture {
     margin-left: 7vw;
