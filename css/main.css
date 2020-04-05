@@ -448,6 +448,10 @@ template {
     top: -20px;
     left: 80px;
     z-index: -1; }
+    @media (max-width: 900px) {
+      .team__background:after {
+        height: 100%;
+        width: 80%; } }
   .team__description {
     padding: 2%; }
     .team__description--bold {
@@ -456,6 +460,10 @@ template {
     @media (max-width: 600px) {
       .team__description {
         font-size: 1rem; } }
+    @media (max-width: 600px) {
+      .team__description {
+        width: 80%;
+        margin-left: 3vw; } }
   .team__title {
     font-size: 2rem;
     letter-spacing: 0.22em;
@@ -646,6 +654,9 @@ template {
     margin-left: 10vw;
     margin-top: 7vh;
     width: 400px; }
+    @media (max-width: 900px) {
+      .map__background {
+        width: 70%; } }
   .map__background:after {
     content: "";
     position: absolute;
@@ -658,6 +669,11 @@ template {
     @media (max-width: 900px) {
       .map__background:after {
         height: 100%; } }
+    @media (max-width: 600px) {
+      .map__background:after {
+        height: 100%;
+        width: 90%;
+        left: 20px; } }
   .map__description {
     padding: 2%; }
     .map__description--bold {
@@ -666,6 +682,15 @@ template {
     @media (max-width: 600px) {
       .map__description {
         font-size: 1rem; } }
+    @media (max-width: 950px) {
+      .map__description {
+        width: 85%; } }
+    @media (max-width: 900px) {
+      .map__description {
+        width: 100%; } }
+    @media (max-width: 600px) {
+      .map__description {
+        width: 80%; } }
   .map__picture {
     margin-left: 7vw;
     width: 40vw; }
@@ -791,6 +816,10 @@ template {
   top: -40px;
   left: 40px;
   z-index: -1; }
+  @media (max-width: 900px) {
+    .portfolio__background:after {
+      height: 100%;
+      width: 90%; } }
 
 .portfolio__link {
   display: -webkit-box;
